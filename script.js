@@ -8,7 +8,7 @@ let q3
 
 document.getElementById("boas-vindas").innerHTML = "Olá, " + name;
 
-const beginTest = prompt('Deseja iniciar o teste? \r\n A: Sim \r\n B: Não');
+const beginTest = prompt('Deseja iniciar o teste? Responda com a letra correspondente \r\n A: Sim \r\n B: Não');
 
 
 if (beginTest == 'B') {
@@ -29,15 +29,42 @@ else {
 
 if (q1 == 'B')
 
-{document.getElementById("resposta-certa").innerHTML = "Resposta 1";
+{document.getElementById("resposta-certa").innerHTML += "\r\n Resposta 1";
 console.log(document.getElementById("resposta-certa"))
 
 }
 
-else{document.getElementById("resposta-incorreta").innerHTML = "Resposta 1";
+else{document.getElementById("resposta-incorreta").innerHTML += "\r\n Resposta 1";
 console.log(document.getElementById("resposta-incorreta"))
 
 }
+
+if (q2 == 'A')
+
+{document.getElementById("resposta-certa").innerHTML += "\r\n Resposta 2";
+console.log(document.getElementById("resposta-certa"))
+
+}
+
+else{document.getElementById("resposta-incorreta").innerHTML += "\r\n Resposta 2";
+
+
+}
+
+if (q3 == 'B')
+
+{
+  document.getElementById("resposta-certa").innerHTML += "\r\n Resposta 3";
+
+
+}
+
+else{document.getElementById("resposta-incorreta").innerHTML += "\r\n Resposta 3";
+
+
+}
+
+
 
 
 
@@ -50,6 +77,3 @@ console.log(document.getElementById("resposta-incorreta"))
 
 
  
-
-
-
